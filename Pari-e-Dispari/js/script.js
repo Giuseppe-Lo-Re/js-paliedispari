@@ -20,7 +20,7 @@ const sumEvenOrOdd = isEvenOrOdd(userNumber);
 // Creo un if per il messaggio di output per l'utente:
 if(sumEvenOrOdd === 'even' && userEvenOrOdd === 'pari') {
     alert ('Hai vinto! ');
-} else if(sumEvenOrOdd !== 'even' && userEvenOrOdd === 'dispari'){
+} else if(sumEvenOrOdd === 'odd' && userEvenOrOdd === 'dispari'){
     alert ('Hai vinto! ');
 }
 else {
