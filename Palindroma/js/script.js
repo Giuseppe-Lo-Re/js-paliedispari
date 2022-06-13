@@ -21,16 +21,19 @@ function isPalindrome(word) {
     let reverseWord;
     let palindromeOrNot = 'no';
    
+    // creo un ciclo for che scorrerà al contrario le lettere della parola inserita dall'utente:
     for(let i = userWord.length - 1; i >= 0; i--) {
     
         // aggiungo le lettere nella variabile:
         reverseWord += userWord[i];  
     }
 
+    // Se la parola dell'utente è uguale alla stessa al contrario, il messaggio di output sarà "yes"
     if(userWord === reverseWord) {
         palindromeOrNot = 'yes'     
     }
 
+    // ritorno il messaggio di output:
     return palindromeOrNot
 }
  
