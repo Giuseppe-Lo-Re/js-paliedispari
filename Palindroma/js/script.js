@@ -10,9 +10,9 @@ const userWordPalindromeOrNot = isPalindrome(userWord);
 
 // Creo un if per il messaggio di output per l'utente: 
 if(userWordPalindromeOrNot === true) {
-    alert('la parola è palindroma')
+    alert('la parola è palindroma');
 } else {
-    alert('la parola non è palindroma')
+    alert('la parola non è palindroma');
 }
 
 // funzione che verifica se la parola è palindroma o no;
@@ -36,7 +36,7 @@ function isPalindrome(word) {
     
     // Se la parola dell'utente è uguale alla stessa al contrario, il messaggio di output sarà "yes"
     if(userWord === reverseWord) {
-        palindromeOrNot = true     
+        palindromeOrNot = true;     
     }
     
     // ritorno il messaggio di output:
