@@ -5,28 +5,26 @@
 // Dichiariamo chi ha vinto.
 
 // Chiedo all’utente di scegliere tra pari e dispari attraverso un prompt:
-const userEvenOrOdd = prompt('pari o dispari?');
+const userEvenOrOdd = prompt('Pari o dispari?');
 
 // Chiedo all’utente di inserire un numero da 1 a 5 attraverso un prompt
 //  e lo trasformo in valore numerico:
-const userNumber = parseInt(prompt('scegli un numero compreso tra 1 e 5'));
+const userNumber = parseInt(prompt('Scegli un numero compreso tra 1 e 5'));
 
-// Invoco la funzione per generare un numero random (sempre da 1 a 5) per il computer:
-const computerNumber = getRndInteger(1, 5);
-console.log('computer', computerNumber)
-// sommo i due numeri:
-const sum = userNumber + computerNumber;
-console.log('somma', sum)
-
+// sommo il numero dell'utente al numero random generato:
+const sum = (userNumber + getRndInteger(1, 5));
 
 // Invoco la funzione che valuterà se la somma dei numeri è pari o dispari:
 const sumEvenOrOdd = isEvenOrOdd(userNumber);
 
 // Creo un if per il messaggio di output per l'utente:
 if(sumEvenOrOdd === 'even' && userEvenOrOdd === 'pari') {
-    alert ('Hai vinto! ')
-} else {
-    alert ('Hai perso!')
+    alert ('Hai vinto! ');
+} else if(sumEvenOrOdd !== 'even' && userEvenOrOdd === 'dispari'){
+    alert ('Hai vinto! ');
+}
+else {
+    alert ('Ha vinto il computer!');
 }
 
 // funzione che genera un numero random compreso tra 1 e 5:
@@ -42,11 +40,14 @@ function isEvenOrOdd(number) {
     // Dichiaro la variabile che utilizzerò come output:
     let evenOrOdd;
 
+    // Se la somma divisa per 2 da come resto zero 
+    // il messaggio di output sarà "even", altrimenti sarà "odd":
     if(sum % 2 === 0) {
-        evenOrOdd = 'even'
+        evenOrOdd = 'even';
     } else {
         evenOrOdd = 'odd';
     }
 
+    // ritorno il messaggio di output:
     return evenOrOdd;
 }
