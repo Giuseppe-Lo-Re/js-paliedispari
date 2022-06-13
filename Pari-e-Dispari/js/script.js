@@ -17,7 +17,7 @@ const sum = (userNumber + getRndInteger(1, 5));
 // Invoco la funzione che valuterà se la somma dei numeri è pari o dispari:
 const sumEvenOrOdd = isEvenOrOdd(userNumber);
 
-// Creo un if per il messaggio di output per l'utente:
+// Creo una if per il messaggio di output per l'utente:
 if(sumEvenOrOdd === 'even' && userEvenOrOdd === 'pari') {
     alert ('Hai vinto! ');
 } else if(sumEvenOrOdd === 'odd' && userEvenOrOdd === 'dispari'){
