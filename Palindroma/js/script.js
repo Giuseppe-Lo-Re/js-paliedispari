@@ -15,13 +15,13 @@ if(userWordPalindromeOrNot === true) {
     alert('la parola non è palindroma');
 }
 
-// funzione che verifica se la parola è palindroma o no;
-// word --> parola da valutare
+// funzione che verifica se la parola è palindroma o no:
+// word --> parola da valutare;
 // return --> stringa: 'true' se palindroma, altrimenti 'false'.
 function isPalindrome(word) {
 
-    // Dichiaro una variabile che conterrà di volta in volta 
-    // le lettere che il ciclo for successivamente scorrerà al contrario :
+    // Inizializzo una variabile vuota che conterrà di volta in volta 
+    // le lettere che il ciclo for successivamente scorrerà al contrario:
     let reverseWord = '';
 
     // dichiaro di default che la parola che inserirà l'utente non sarà palindroma, attraverso il valore = false della variabile:
@@ -34,7 +34,7 @@ function isPalindrome(word) {
         reverseWord += userWord[i];  
     }
     
-    // Se la parola dell'utente è uguale alla stessa al contrario, il messaggio di output sarà "yes"
+    // Se la parola dell'utente è palindroma, il messaggio di output sarà "true":
     if(userWord === reverseWord) {
         palindromeOrNot = true;     
     }
