@@ -17,7 +17,7 @@ if(userWordPalindromeOrNot === true) {
 
 // funzione che verifica se la parola è palindroma o no:
 // word --> parola da valutare;
-// return --> stringa: 'true' se palindroma, altrimenti 'false'.
+// return --> booleano: 'true' se palindroma, altrimenti 'false'.
 function isPalindrome(word) {
 
     // Inizializzo una variabile vuota che conterrà di volta in volta 
